@@ -58,7 +58,7 @@ body {
 ═══════════════════════════════════════════════ */
 .app-container {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   position: relative;
   overflow: hidden;
@@ -163,6 +163,7 @@ body {
 
 /* ── Sessions Section ── */
 .sessions-section {
+  -webkit-overflow-scrolling: touch;
   flex: 1;
   overflow-y: auto;
   margin-bottom: 1rem;
@@ -361,6 +362,7 @@ body {
 
 /* ── Chat History ── */
 .chat-history {
+  -webkit-overflow-scrolling: touch;
   flex: 1;
   overflow-y: auto;
   padding: 2rem 2rem 1rem;
@@ -848,6 +850,7 @@ body {
   .mobile-close-btn { display: flex; }
 
   .chat-history {
+  -webkit-overflow-scrolling: touch;
     padding: 1rem 0.85rem 0.75rem;
     gap: 1rem;
   }
@@ -909,6 +912,7 @@ body {
   .mobile-close-btn { display: flex; }
 
   .chat-history {
+  -webkit-overflow-scrolling: touch;
     padding: 1.25rem 1.1rem 0.85rem;
     gap: 1.1rem;
   }
@@ -943,6 +947,7 @@ body {
   .mobile-close-btn { display: flex; }
 
   .chat-history {
+  -webkit-overflow-scrolling: touch;
     padding: 1.5rem 1.75rem 1rem;
     gap: 1.25rem;
   }
@@ -976,7 +981,8 @@ body {
   .mobile-close-btn { display: none !important; }
   .sidebar-overlay { display: none !important; }
 
-  .chat-history { padding: 2rem 2.5rem 1.25rem; }
+  .chat-history {
+  -webkit-overflow-scrolling: touch; padding: 2rem 2.5rem 1.25rem; }
 
   .message-bubble { max-width: 76%; }
 
@@ -989,7 +995,8 @@ body {
 
   .sidebar { width: var(--sidebar-width); }
 
-  .chat-history { padding: 2rem 3rem 1.25rem; gap: 1.75rem; }
+  .chat-history {
+  -webkit-overflow-scrolling: touch; padding: 2rem 3rem 1.25rem; gap: 1.75rem; }
 
   .message-bubble {
     max-width: 72%;
@@ -1028,6 +1035,7 @@ body {
   .session-item { font-size: 0.95rem; padding: 0.7rem 0.85rem; }
 
   .chat-history {
+  -webkit-overflow-scrolling: touch;
     padding: 2.5rem 4rem 1.5rem;
     gap: 2rem;
   }
