@@ -35,12 +35,12 @@ function App() {
 
   const handleNewChat = () => {
     setActiveSessionId(null);
-    if (window.innerWidth <= 768) setIsSidebarOpen(false);
+    if (window.innerWidth < 1024) setIsSidebarOpen(false);
   };
 
   const handleSelectSession = (id) => {
     setActiveSessionId(id);
-    if (window.innerWidth <= 768) setIsSidebarOpen(false);
+    if (window.innerWidth < 1024) setIsSidebarOpen(false);
   };
 
   const handleDeleteSession = (id) => {
@@ -51,7 +51,7 @@ function App() {
   // Close sidebar on desktop resize
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth >= 1024) {
         setIsSidebarOpen(false);
       }
     };
